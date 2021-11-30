@@ -1,0 +1,65 @@
+.Achievements {
+  padding: 20rem 0;
+  background: #fff url(../../images/gane-scores-bg.jpg) no-repeat left top;
+}
+
+.Achievements__title {
+  color: #FF6200;
+}
+
+.Achievements__title-big {
+  background: #FF6200;
+  color: #fff;
+  height: 9rem;
+  font-size: 2rem;
+  clip-path: polygon(0 0, 70% 0%, 75% 100%, 5% 100%);
+  text-transform: uppercase;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  margin-bottom: 6rem;
+  padding-left: 6rem;
+  margin-left: -6rem;
+}
+
+.Achievements__text {
+  font-weight: 400;
+  color: #000;
+  margin-bottom: 3rem;
+}
+
+.Achievements__text:before {
+  content: '';
+  display: inline-block;
+  width: 1.6rem;
+  height: 1.6rem;
+  background: url(../../images/thophy.svg) no-repeat center center;
+  margin-right: 0.8rem;
+  margin-top: 0.4rem;
+}
+
+.Achievements__text span {
+  color: #707070;
+  opacity: 0.8;
+  font-weight: 300;
+}
+
+@media (max-width: 576px) {
+  .Achievements {
+    padding: 0;
+  }
+  .Achievements__respinfo {
+    background: rgba(255, 255, 255, 0.8);
+    padding-bottom: 7rem;
+  }
+  .Achievements__title-big {
+    margin-top: -4rem;
+    clip-path: polygon(0 0, 90% 0%, 95% 100%, 5% 100%);
+  }
+  .Achievements__title {
+    font-size: 1.4rem;
+  }
+  .Achievements__row {
+    padding: 0 2rem;
+  }
+}

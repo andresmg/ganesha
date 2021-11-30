@@ -1,0 +1,128 @@
+.Rank {
+  position: relative;
+}
+
+.Rank__intro {
+  margin-top: 12rem;
+}
+
+.Rank__intro p {
+  margin-bottom: 3rem;
+}
+
+.Rank__ranking {
+  margin-top: 10rem;
+  margin-left: 2rem;
+}
+
+.Rank__number {
+  font-size: 6rem;
+  color: #000;
+  position: relative;
+}
+
+.Rank__number:before {
+  content: '#';
+  color: #FF6200;
+  font-size: 4rem;
+  position: absolute;
+  top: -2rem;
+  left: -2rem;
+}
+
+.Rank__info span {
+  display: block;
+  color: #000;
+}
+
+.Rank__rrss {
+  background: #FF6200;
+  color: #fff;
+  height: 9rem;
+  margin-top: 4rem;
+  clip-path: polygon(0 0, 70% 0%, 75% 100%, 0% 100%);
+}
+
+.Rank__rrss-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.Rank__rrss p {
+  margin-bottom: 0;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.Rank__icon {
+  height: 9rem;
+  position: relative;
+  transition: all 0.2s ease-in-out;
+}
+
+.Rank__icon:before {
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 100%;
+  border-left: solid 0.4rem #fff;
+  transform: skewX(41deg);
+}
+
+.Rank__icon:last-child:before {
+  display: none;
+}
+
+.Rank__icon:hover {
+  background-size: 3.5rem;
+}
+
+.Rank__icon-whatsapp {
+  background: url(../../images/whatsapp.svg) no-repeat 60% center/3rem;
+}
+
+.Rank__icon-mail {
+  background: url(../../images/mail.svg) no-repeat 60% center/3rem;
+}
+
+.Rank__icon-instagram {
+  background: url(../../images/instagram.svg) no-repeat 60% center/3rem;
+}
+
+.Rank__icon-twitter {
+  background: url(../../images/twitter.svg) no-repeat 60% center/3rem;
+}
+
+@media (max-width: 576px) {
+  .Rank {
+    background: rgba(255, 255, 255, 0.8);
+  }
+  .Rank__intro {
+    margin-top: 4rem;
+    padding: 0 2rem;
+  }
+  .Rank__ranking {
+    margin-top: 4rem;
+    margin-left: 2rem;
+  }
+  .Rank__rrss {
+    margin-top: 0rem;
+    clip-path: unset;
+    height: auto;
+    padding: 2rem;
+  }
+  .Rank__rrss-info p {
+    text-align: center;
+  }
+  .Rank__icon {
+    height: 6rem;
+    transition: unset;
+  }
+  .Rank__icon:before {
+    display: none;
+  }
+  .Rank__icon:hover {
+    background-size: unset;
+  }
+}

@@ -1,0 +1,140 @@
+@import '../../stylesheets/variables';
+
+.Rank {
+  position: relative;
+
+  &__intro {
+    margin-top: 12rem;
+
+    p {
+      margin-bottom: 3rem;
+    }
+  }
+
+  &__ranking {
+    margin-top: 10rem;
+    margin-left: 2rem;
+  }
+
+  &__number {
+    font-size: 6rem;
+    color: $black;
+    position: relative;
+
+    &:before {
+      content: '#';
+      color: $orange;
+      font-size: 4rem;
+      position: absolute;
+      top: -2rem;
+      left: -2rem;
+    }
+  }
+
+  &__info {
+    span {
+      display: block;
+      color: $black;
+    }
+  }
+
+  &__rrss {
+    background: $orange;
+    color: $white;
+    height: 9rem;
+    margin-top: 4rem;
+    clip-path: polygon(0 0, 70% 0%, 75% 100%, 0% 100%);
+
+    &-info {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    p {
+      margin-bottom: 0;
+      font-size: 2rem;
+      font-weight: 700;
+    }
+  }
+
+  &__icon {
+    height: 9rem;
+    position: relative;
+    transition: all 0.2s ease-in-out;
+
+    &:before {
+      position: absolute;
+      content: '';
+      width: 100%;
+      height: 100%;
+      border-left: solid 0.4rem $white;
+      transform: skewX(41deg);
+    }
+
+    &:last-child {
+      &:before {
+        display: none;
+      }
+    }
+
+    &:hover {
+      background-size: 3.5rem;
+    }
+
+    &-whatsapp {
+      background: url(../../images/whatsapp.svg) no-repeat 60% center / 3rem;
+    }
+    &-mail {
+      background: url(../../images/mail.svg) no-repeat 60% center / 3rem;
+    }
+    &-instagram {
+      background: url(../../images/instagram.svg) no-repeat 60% center / 3rem;
+    }
+    &-twitter {
+      background: url(../../images/twitter.svg) no-repeat 60% center / 3rem;
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .Rank {
+    background: rgba($white, 0.8);
+
+    &__intro {
+      margin-top: 4rem;
+      padding: 0 2rem;
+    }
+
+    &__ranking {
+      margin-top: 4rem;
+      margin-left: 2rem;
+    }
+
+    &__rrss {
+      margin-top: 0rem;
+      clip-path: unset;
+      height: auto;
+      padding: 2rem;
+
+      &-info {
+        p {
+          text-align: center;
+        }
+      }
+    }
+
+    &__icon {
+      height: 6rem;
+      transition: unset;
+
+      &:before {
+        display: none;
+      }
+
+      &:hover {
+        background-size: unset;
+      }
+    }
+  }
+}

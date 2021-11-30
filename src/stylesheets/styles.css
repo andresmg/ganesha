@@ -1,0 +1,39 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;700&display=swap");
+html {
+  font-size: 10px;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: 'Outfit', sans-serif;
+  font-weight: 400;
+  color: #707070;
+}
+
+body strong {
+  font-weight: 700;
+  color: #000;
+}
+
+body .light {
+  font-weight: 300;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700;
+}
+
+@media (max-width: 576px) {
+  body {
+    color: #333;
+  }
+}
+
+body {
+  background: #f6f6f6 url(../images/gane-home-bg.jpg) no-repeat right top;
+}

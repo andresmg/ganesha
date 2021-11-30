@@ -1,0 +1,23 @@
+@import '../../stylesheets/variables';
+
+.Header {
+  &__row {
+    padding: 2rem;
+  }
+
+  &__logo {
+    margin-top: 4rem;
+    width: 34rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .Header {
+    background: rgba($white, 0.8);
+
+    &__logo {
+      margin-top: 0rem;
+      width: 34rem;
+    }
+  }
+}

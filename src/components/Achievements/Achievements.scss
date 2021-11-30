@@ -1,0 +1,73 @@
+@import '../../stylesheets/variables';
+
+.Achievements {
+  padding: 20rem 0;
+  background: #fff url(../../images/gane-scores-bg.jpg) no-repeat left top;
+
+  &__title {
+    color: $orange;
+
+    &-big {
+      background: $orange;
+      color: #fff;
+      height: 9rem;
+      font-size: 2rem;
+      clip-path: polygon(0 0, 70% 0%, 75% 100%, 5% 100%);
+      text-transform: uppercase;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      margin-bottom: 6rem;
+      padding-left: 6rem;
+      margin-left: -6rem;
+    }
+  }
+
+  &__text {
+    font-weight: 400;
+    color: $black;
+    margin-bottom: 3rem;
+
+    &:before {
+      content: '';
+      display: inline-block;
+      width: 1.6rem;
+      height: 1.6rem;
+      background: url(../../images/thophy.svg) no-repeat center center;
+      margin-right: 0.8rem;
+      margin-top: 0.4rem;
+    }
+
+    span {
+      color: $text;
+      opacity: 0.8;
+      font-weight: 300;
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .Achievements {
+    padding: 0;
+
+    &__respinfo {
+      background: rgba($white, 0.8);
+    padding-bottom: 7rem;
+    }
+
+    &__title {
+      &-big {
+        margin-top: -4rem;
+        clip-path: polygon(0 0, 90% 0%, 95% 100%, 5% 100%);
+      }
+    }
+
+    &__title {
+        font-size: 1.4rem;
+    }
+
+    &__row {
+        padding: 0 2rem;
+    }
+  }
+}

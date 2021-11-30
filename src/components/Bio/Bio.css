@@ -1,0 +1,53 @@
+.Bio {
+  margin-top: 20rem;
+  position: relative;
+}
+
+.Bio__intro {
+  margin-top: 12rem;
+}
+
+.Bio__intro p {
+  margin-bottom: 3rem;
+}
+
+.Bio__info {
+  color: #FF6200;
+  height: 9rem;
+  margin-top: 4rem;
+  text-transform: uppercase;
+}
+
+.Bio__quote {
+  position: relative;
+}
+
+.Bio__quote-icon {
+  content: '';
+  position: absolute;
+  top: 1rem;
+  left: 2rem;
+  width: 5.5rem;
+  height: 4.5rem;
+}
+
+.Bio__quote p {
+  margin-bottom: 0;
+  font-size: 2.4rem;
+  font-weight: 700;
+}
+
+@media (max-width: 576px) {
+  .Bio {
+    background: rgba(255, 255, 255, 0.8);
+    margin-top: 0;
+  }
+  .Bio__intro {
+    padding: 2rem;
+    margin-top: 2rem;
+  }
+  .Bio__quote-row {
+    background: rgba(255, 255, 255, 0.8);
+    padding-bottom: 12rem;
+  }
+}

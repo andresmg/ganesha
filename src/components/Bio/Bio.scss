@@ -1,0 +1,59 @@
+@import '../../stylesheets/variables';
+
+.Bio {
+  margin-top: 20rem;
+  position: relative;
+
+  &__intro {
+    margin-top: 12rem;
+
+    p {
+      margin-bottom: 3rem;
+    }
+  }
+
+  &__info {
+    color: $orange;
+    height: 9rem;
+    margin-top: 4rem;
+    text-transform: uppercase;
+  }
+
+  &__quote {
+    position: relative;
+
+    &-icon {
+      content: '';
+      position: absolute;
+      top: 1rem;
+      left: 2rem;
+      width: 5.5rem;
+      height: 4.5rem;
+    }
+
+    p {
+      margin-bottom: 0;
+      font-size: 2.4rem;
+      font-weight: 700;
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .Bio {
+    background: rgba($white, 0.8);
+    margin-top: 0;
+
+    &__intro {
+      padding: 2rem;
+      margin-top: 2rem;
+    }
+
+    &__quote {
+      &-row {
+        background: rgba($white, 0.8);
+        padding-bottom: 12rem;
+      }
+    }
+  }
+}

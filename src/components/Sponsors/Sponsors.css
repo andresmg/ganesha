@@ -1,0 +1,22 @@
+.Sponsors {
+  background: #000 url(../../images/gane-contact-bg.jpg) no-repeat 20rem center/cover;
+  height: 80rem;
+}
+
+.Sponsors__info {
+  margin-top: 20rem;
+}
+
+.Sponsors__image {
+  margin-bottom: 6rem;
+}
+
+@media (max-width: 576px) {
+  .Sponsors {
+    background: #000 url(../../images/gane-contact-bg.jpg) no-repeat center center/cover;
+    height: 50rem;
+  }
+  .Sponsors__info {
+    margin-top: 0;
+  }
+}

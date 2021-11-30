@@ -1,0 +1,13 @@
+.Banner {
+  margin-top: 10rem;
+  height: 80rem;
+  background: url(../../images/gane-bw-bg.jpg) no-repeat center -30rem;
+  background-attachment: fixed;
+}
+
+@media (max-width: 576px) {
+  .Banner {
+    margin-top: 0;
+    height: 40rem;
+  }
+}
