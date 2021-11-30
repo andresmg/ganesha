@@ -8,9 +8,6 @@
 }
 
 @media (max-width: 576px) {
-  .Header {
-    background: rgba(255, 255, 255, 0.8);
-  }
   .Header__logo {
     margin-top: 0rem;
     width: 34rem;

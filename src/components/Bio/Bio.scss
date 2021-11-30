@@ -41,7 +41,6 @@
 
 @media (max-width: 576px) {
   .Bio {
-    background: rgba($white, 0.8);
     margin-top: 0;
 
     &__intro {
@@ -49,10 +48,21 @@
       margin-top: 2rem;
     }
 
+    &__info {
+      margin-top: 0;
+      p {
+        font-size: 1.8rem;
+        text-align: center;
+      }
+    }
+
     &__quote {
+      &-icon {
+        top: -2rem;
+      }
+
       &-row {
-        background: rgba($white, 0.8);
-        padding-bottom: 12rem;
+        padding-bottom: 6rem;
       }
     }
   }

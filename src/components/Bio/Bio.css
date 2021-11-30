@@ -39,15 +39,23 @@
 
 @media (max-width: 576px) {
   .Bio {
-    background: rgba(255, 255, 255, 0.8);
     margin-top: 0;
   }
   .Bio__intro {
     padding: 2rem;
     margin-top: 2rem;
   }
+  .Bio__info {
+    margin-top: 0;
+  }
+  .Bio__info p {
+    font-size: 1.8rem;
+    text-align: center;
+  }
+  .Bio__quote-icon {
+    top: -2rem;
+  }
   .Bio__quote-row {
-    background: rgba(255, 255, 255, 0.8);
-    padding-bottom: 12rem;
+    padding-bottom: 6rem;
   }
 }

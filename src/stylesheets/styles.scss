@@ -4,3 +4,9 @@
 body {
   background: #f6f6f6 url(../images/gane-home-bg.jpg) no-repeat right top;
 }
+
+@media (max-width: 576px) {
+  body {
+    background: #f6f6f6 url(../images/gane-home-bg-resp.jpg) no-repeat right top;
+  }
+}
