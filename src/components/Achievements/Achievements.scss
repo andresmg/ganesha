@@ -49,9 +49,11 @@
 @media (max-width: 576px) {
   .Achievements {
     padding: 0;
+    background: #fff url(../../images/gane-scores-bg-resp.jpg) no-repeat left
+      top;
 
     &__respinfo {
-    padding-bottom: 7rem;
+      padding-bottom: 7rem;
     }
 
     &__title {
@@ -62,11 +64,11 @@
     }
 
     &__title {
-        font-size: 1.4rem;
+      font-size: 1.4rem;
     }
 
     &__row {
-        padding: 0 2rem;
+      padding: 0 2rem;
     }
   }
 }
