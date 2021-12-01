@@ -2,14 +2,65 @@
   padding: 2rem;
 }
 
+.Header__row:after {
+  content: 'PROFESSIONAL BEACH TENNIS PLAYER';
+  display: block;
+  color: #000;
+  margin-left: 8.2rem;
+  font-size: 1.4rem;
+}
+
 .Header__logo {
   margin-top: 4rem;
   width: 34rem;
 }
 
+.Header__nav {
+  position: fixed;
+  width: 100%;
+  padding: 2rem;
+  top: -20rem;
+  left: 0;
+  background: #fff;
+  box-shadow: 0 -0.2rem 2rem 0 rgba(0, 0, 0, 0.2);
+  transition: all 0.5s ease-in-out;
+  z-index: 1;
+  background: linear-gradient(to right, #FF6200, #df5500);
+}
+
+.Header__nav.show {
+  top: 0;
+}
+
 @media (max-width: 576px) {
+  .Header__row:after {
+    font-size: 1.3rem;
+  }
   .Header__logo {
     margin-top: 0rem;
-    width: 34rem;
+    width: 32rem;
+  }
+  .Header__respLogo {
+    width: 3.2rem;
+  }
+  .Header__nav-icon {
+    display: block;
+    width: 3.2rem;
+    height: 3.2rem;
+    border-radius: 5rem;
+    margin: 0 0.6rem;
+    background-size: 2rem !important;
+  }
+  .Header__nav-icon.whatsapp {
+    background: url("../../images/whatsapp.svg") no-repeat center;
+  }
+  .Header__nav-icon.mail {
+    background: url("../../images/mail.svg") no-repeat center;
+  }
+  .Header__nav-icon.instagram {
+    background: url("../../images/instagram.svg") no-repeat center;
+  }
+  .Header__nav-icon.twitter {
+    background: url("../../images/twitter.svg") no-repeat center;
   }
 }

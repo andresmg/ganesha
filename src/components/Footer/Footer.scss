@@ -1,0 +1,15 @@
+@import '../../stylesheets/variables';
+.Footer {
+  background: $orange;
+  color: $white;
+  padding: 1rem 0;
+  font-size: 1.2rem;
+
+  &__made {
+      text-align: right;
+  }
+
+  a {
+    color: $white;
+  }
+}

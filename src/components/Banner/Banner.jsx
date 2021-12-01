@@ -3,10 +3,21 @@ import React from 'react'
 
 function Banner() {
 
-    let diff, scale, horizontalSum, difftop
+    let depth, diff, scale, horizontalSum, difftop
 
 
     document.onscroll = () => {
+
+        depth = window.scrollY
+        // Menu collapse effect
+    
+        if (depth > 100) {
+            document.querySelector('.Header__nav').classList.add('show')
+        } else {
+            document.querySelector('.Header__nav').classList.remove('show')
+        }
+
+        
         const getBanner = document.querySelector('.Banner')
 
         diff = getBanner.getBoundingClientRect().bottom
