@@ -41,5 +41,7 @@ body {
 @media (max-width: 576px) {
   body {
     background: #f6f6f6 url(../images/gane-home-bg-resp.jpg) no-repeat right top;
+    background-size: 70%;
+    background-position-y: 40rem;
   }
 }

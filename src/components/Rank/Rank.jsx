@@ -27,7 +27,7 @@ function Rank() {
                         </Fade>
                         <Fade delay={500} direction="up" triggerOnce>
                             <div className="Rank__ranking row">
-                                <div className="col-6">
+                                <div className="col-5">
                                     <h1 className="Rank__number internationalRank">{increaseRank(internationalRank, "internationalRank")}</h1>
                                     <p className="Rank__info">Ranking <span>internacional</span></p>
                                 </div>

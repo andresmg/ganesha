@@ -33,6 +33,7 @@
 .Rank__info span {
   display: block;
   color: #000;
+  font-weight: 700;
 }
 
 .Rank__rrss {
@@ -100,8 +101,17 @@
     padding: 0 2rem;
   }
   .Rank__ranking {
-    margin-top: 4rem;
-    margin-left: 2rem;
+    margin-top: 6rem;
+    margin-left: 0rem;
+    padding-bottom: 6rem;
+  }
+  .Rank__number {
+    font-size: 3rem;
+  }
+  .Rank__number:before {
+    font-size: 2rem;
+    top: -1rem;
+    left: -1rem;
   }
   .Rank__rrss {
     margin-top: 0rem;
