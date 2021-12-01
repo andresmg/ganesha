@@ -13,11 +13,6 @@
     }
   }
 
-  &__logo {
-    margin-top: 4rem;
-    width: 34rem;
-  }
-
   &__nav {
     position: fixed;
     width: 100%;
@@ -25,14 +20,35 @@
     top: -20rem;
     left: 0;
     background: $white;
-    box-shadow: 0 -0.2rem 2rem 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0.2rem 2rem 0 rgba($black, 0.6);
     transition: all 0.5s ease-in-out;
     z-index: 1;
-    background: linear-gradient(to right, $orange, #df5500 );
+    // background: linear-gradient(to right, $orange, #df5500 );
 
     &.show {
       top: 0;
     }
+    &-icon {
+      display: block;
+      width: 3.2rem;
+      height: 3.2rem;
+      border-radius: 5rem;
+      margin: 0 3rem;
+
+      img {
+        width: 2.8rem;
+      }
+    }
+  }
+
+  &__respLogo {
+    height: 3.2rem;
+    background: url(../../images/logo.svg) no-repeat left center / contain;
+  }
+
+  &__logo {
+    margin-top: 4rem;
+    width: 34rem;
   }
 }
 
@@ -44,40 +60,25 @@
       }
     }
 
+    &__nav {
+      &-icon {
+        margin: 0 0.6rem;
+
+        img {
+          width: 2rem;
+        }
+      }
+    }
+
     &__logo {
       margin-top: 0rem;
       width: 32rem;
     }
 
     &__respLogo {
-      width: 3.2rem;
-    }
-
-    &__nav {
-      &-icon {
-        display: block;
-        width: 3.2rem;
-        height: 3.2rem;
-        border-radius: 5rem;
-        margin: 0 0.6rem;
-        background-size: 2rem !important;
-
-        &.whatsapp {
-          background: url('../../images/whatsapp.svg') no-repeat center;
-        }
-
-        &.mail {
-          background: url('../../images/mail.svg') no-repeat center;
-        }
-
-        &.instagram {
-          background: url('../../images/instagram.svg') no-repeat center;
-        }
-
-        &.twitter {
-          background: url('../../images/twitter.svg') no-repeat center;
-        }
-      }
+      height: 3.2rem;
+      background: url(../../images/resp-logo.svg) no-repeat left center /
+        contain;
     }
   }
 }

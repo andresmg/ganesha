@@ -12,12 +12,20 @@ function Header() {
             <nav className="Header__nav">
                 <div className="row">
                     <div className="col Header__nav-row">
-                        <img className="Header__respLogo" src="./images/resp-logo.svg" alt="logo" />
+                        <div className="Header__respLogo" />
                     </div>
-                    <div className="Header__nav-icon whatsapp"></div>
-                    <div className="Header__nav-icon mail"></div>
-                    <div className="Header__nav-icon instagram"></div>
-                    <div className="Header__nav-icon twitter"></div>
+                    <div className="Header__nav-icon">
+                        <img src="./images/whatsapp.svg" alt="logo" />
+                    </div>
+                    <div className="Header__nav-icon">
+                        <img src="./images/mail.svg" alt="logo" />
+                    </div>
+                    <div className="Header__nav-icon">
+                        <img src="./images/instagram.svg" alt="logo" />
+                    </div>
+                    <div className="Header__nav-icon">
+                        <img src="./images/twitter.svg" alt="logo" />
+                    </div>
                 </div>
             </nav>
         </header>

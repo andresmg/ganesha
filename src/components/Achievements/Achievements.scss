@@ -58,7 +58,14 @@
     &__title {
       &-big {
         margin-top: -4rem;
-        clip-path: polygon(0 0, 90% 0%, 95% 100%, 5% 100%);
+        margin-left: 0;
+        clip-path: unset;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-left: 0;
+        font-size: 1.5rem;
+        height: 6rem;
       }
     }
 
